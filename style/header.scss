@@ -1,0 +1,144 @@
+header {
+
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+
+    padding: 10px 0 10px;
+    background-color: white !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    button {
+        display: none;
+    }
+
+    img {
+
+        width: 120.6px;
+        height: 120.6px;
+        margin: 10px;
+    }
+
+    h2 {
+        width: 100%;
+        height: 38, 5px;
+        padding: 8px 16px;
+
+    }
+
+
+    ul {
+
+
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+
+        li {
+            width: 300px;
+            height: 38, 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding: 8px 16px;
+
+
+
+            a {
+                text-decoration: none;
+                color: black;
+
+            }
+
+            &:hover {
+                background-color: rgb(189, 189, 189);
+            }
+        }
+
+
+    }
+
+    button {
+        display: none;
+    }
+
+    @media screen and (max-width:769px) {
+
+position: static;
+        ul {
+            display: none;
+        }
+
+        button {
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            display: block;
+        }
+
+        padding: 0;
+        background-color: rgba(102, 51, 153, 0) !important;
+        border: none;
+        width: 60%;
+        height: 70px;
+        flex-direction: row;
+
+        img {
+            display: none;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        ul {
+            flex-direction: row;
+
+            li {
+                width: max-content;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 426px) {
+gap: 186px;
+        ul {
+            display: none;
+        }
+
+        button {
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            display: block;
+        }
+
+        background: rgba(245, 222, 179, 0) !important;
+        align-items: center;
+        justify-content:space-around;
+        height: 150px;
+        width: 55%;
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        img {
+            display: block;
+            border-radius: 100%;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.about {
+    width: 100%;
+    background-color: #f1f1f1;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 335px;
+
+
+
+
+
+    .nkar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+margin: 20px;
+        gap: 20px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+
+
+        img {
+            width: calc(100% / 2);
+            height: max-content
+        }
+
+    }
+
+    .me {
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 40px;
+
+
+        #about {
+            font-weight: 500;
+        }
+
+        .tokos {
+            width: 100%;
+            background-color: rgb(169, 168, 168);
+
+
+
+
+        }
+
+        .arajin>p {
+            padding: 10px;
+            width: 95%;
+            background-color: gray;
+        }
+
+        .erkrord>p {
+            padding: 10px;
+            width: 85%;
+            background-color: gray;
+        }
+
+        .errord>p {
+            padding: 10px;
+            width: 75%;
+            background-color: gray;
+
+        }
+    }
+
+
+    @media screen and (max-width:539px) {
+
+
+        .nkar {
+            flex-direction: column;
+            gap: 0px;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        .me {
+            padding-left: 30px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        padding-left: 30px;
+
+    }
+
+
+
+}

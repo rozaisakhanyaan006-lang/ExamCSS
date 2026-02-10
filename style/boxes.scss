@@ -1,0 +1,169 @@
+.boxes {
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+    background-color: #f1f1f1;
+
+    .hamar {
+        min-width: 320px;
+        margin: 20px 0;
+        width: 100%;
+        // height: 370px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+
+
+        .box {
+
+            width: calc(100% / 3);
+            ;
+            height: 380px;
+            padding: 8px;
+
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+            img {
+                width: 90%;
+                height: 300px;
+
+                &:hover {
+                    opacity: 0.60;
+                }
+
+
+
+
+            }
+
+            .text {
+
+
+                width: 90%;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+
+                h3 {
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+
+
+
+
+    }
+
+
+
+    @media screen and (max-width:768px) {
+        padding-left: 0;
+
+
+        .hamar>.box>img {
+            height: 160px;
+        }
+
+    }
+
+    .tver {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 15px;
+            fill: black;
+
+            &:hover {
+                color: #f1f1f1;
+                background-color: black;
+                fill: #f1f1f1;
+            }
+        }
+    }
+
+    @media screen and (max-width:507px) {
+
+        .hamar {
+            padding-right: 30px;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .box {
+                width: 80%;
+
+                padding: 0;
+                margin: 0;
+
+                img {
+                    width: 79%;
+                }
+
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width:1024px) {
+        .hamar {
+            .box {
+                height: 380px;
+
+                img {
+                    height: 138px;
+
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:2560px) {
+        .hamar {
+            .box {
+                height: 755px;
+
+                img {
+                    height: 477px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width:430px) {
+    body {
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+}

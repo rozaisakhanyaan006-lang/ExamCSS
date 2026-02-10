@@ -1,0 +1,105 @@
+.foot {
+    width: 100%;
+    height: auto;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 335px;
+gap: 20px;
+padding-top: 15px;
+
+    
+
+    .block {
+        width: calc(100% / 3);
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+
+
+        .fp {
+            width:
+                100%;
+            display: flex;
+            gap: 10px
+            ;
+            justify-content: center;
+            align-items: center;
+            
+
+            .ft {
+                width: 100%;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+        }
+
+        .list {
+            width: 100%;
+
+
+            span {
+                width: max-content;
+
+                background-color: grey;
+                color: white;
+            }
+        }
+
+    }
+
+    .erku {
+        gap: 20px;
+
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        flex-wrap: wrap;
+
+        .block {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        padding-left: 30px;
+
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .block.mek,
+        .block.erku,
+        .block.ereq {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:429px) {
+   section{
+    margin: 0;
+    padding: 0;
+   }
+}
