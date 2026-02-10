@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    
+}
+section{min-width: 432px;
+@import"./style/header.scss";
+@import"./style/main/portfolio.scss";
+@import'./style/main/boxes.scss';
+@import "./style/main/about.scss";
+@import "./style/main/contact.scss";
+@import "./footer.scss";
+
+
+   
+}
+
